@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../home/Home";
+import React from "react";
+
+// code spliting
+const Home = React.lazy(() => import("../home/Home"));
 
 const Main = () => {
   return (
