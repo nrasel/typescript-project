@@ -2,13 +2,13 @@ import React from "react";
 
 const ProductCard = ({ product }: { product: any }) => {
   return (
-    <div>
-      <div>
-        <img src="" alt="" />
+    <div className="p-3 rounded-sm shadow hover:shadow-xl hover:cursor-pointer">
+      <div className="relative pb-60">
+        <img src="" alt="" className="absolute object-cover w-full h-full" />
       </div>
-      <div>
-        <h4>{product}</h4>
-        <p>Product price</p>
+      <div className="pt-3">
+        <h4>{product.name}</h4>
+        <p className="text-lg font-semibold">{product.price}</p>
       </div>
     </div>
   );
